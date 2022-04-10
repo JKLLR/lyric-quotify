@@ -10,13 +10,20 @@ import { Quoteclass } from 'src/app/quoteclass';
 export class QuotesComponent implements OnInit {
   
   quotes: Quoteclass[] = [ 
-    new Quoteclass('A friend is someone who knows all about you and still loves you.', 'Elbert Hubbard', 'Lizbeth Wangu',  0, 0, new Date(2020, 12, 5)),
-    new Quoteclass('If you can make a woman laugh, you can make her do anything.', 'Marilyn Monroe', 'Lyn Adelaide',  0, 0, new Date(2020, 12, 5)),
-   new Quoteclass('I have no notion of loving people by halves, it is not my  nature.', 'Jane Austen', 'Edrea Leslie',  0, 0, new Date(2020, 12, 5)),
-   new Quoteclass('It is not a lack of love, but a lack of friendship that makes unhappy marriages.', 'Friedrich Nietzsche', 'Charlene Rose',  0, 0, new Date(2020, 12, 5)),
-   new Quoteclass('The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.', ' Bob Marley', 'Albert Austen',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass('Emancipate yourselves from mental slavery, None but ourselves can free our minds.', 'Bob Marley', 'Joe Karanja',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass('The story of life is quicker than the wink of an eye, the story of love is hello and goodbye...until we meet again', ' Jimi Hendrix', 'Owen',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass("The game aint always fair and that is the thing though. You can play your heart out, everybody do not get a ring though.", 'Drake', 'Mburu',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass('Ahhh,  finesse If I broke na my business', 'Pheelz', 'Anonymous',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass('You have every right to a beautiful life.', 'Selena Gomez', 'Austin Obim',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass('And anytime you feel the pain refrain. Do not carry the world upon your shoulders. For well you know that it iss a fool who plays it cool by making his world a little colder.', 'The Beatles', 'Martin Kimani',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass('The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.', ' Bob Marley', 'Derrick Maina',  0, 0, new Date(2020, 12, 5)),
+    new Quoteclass('You have to hurt in order to know. Fall in order to grow. Lose in order to gain. Because most of lifes lessons are learned in pain.', 'J Cole', 'Huria',  0, 0, new Date(2020, 12, 5)),
    
   ];
+
+  toggleDetails(index: number) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   
 
