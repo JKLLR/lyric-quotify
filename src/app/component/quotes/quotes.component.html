@@ -3,11 +3,16 @@
        
         <div class="card-body">
           <p class="card-text">{{quote.Quote}}</p>
-          <div>
-               <footer class="blockquote-footer"><cite title="Source Title">{{quote.author|titlecase}}</cite></footer>
+          <blockquote class="blockquote m-8">
+               <footer class="blockquote-footer mt-2"><cite title="Source Title">{{quote.author|titlecase}}</cite></footer>
                <button class="btn btn-warning" (click)='toggleDetails(i)' > See More</button>
-          </div>
+          </blockquote>
         </div>
-      </div>
+       
+        <div class="card-body">
+            
+         
+        </div>
+    </div>
 
 </div>
