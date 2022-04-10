@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <div class="card" *ngFor='let quote of quotes let i= index'>
        
-        <div class="card-body">
-          <p class="card-text">{{quote.Quote}}</p>
+        <div appHighlights class="card-body">
+          <p class="card-text ">{{quote.Quote}}</p>
           <blockquote class="blockquote m-8">
                <footer class="blockquote-footer mt-2"><cite title="Source Title">{{quote.author|titlecase}}</cite></footer>
                <button class="btn btn-warning" (click)='toggleDetails(i)' > See More</button>
