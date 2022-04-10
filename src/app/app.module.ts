@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { QuotesComponent } from './component/quotes/quotes.component';
+import { FormComponent } from './component/form/form.component';
+import { HighlightsDirective } from './directives/highlights.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    QuotesComponent
+    QuotesComponent,
+    FormComponent,
+    HighlightsDirective
   ],
   imports: [
     BrowserModule,

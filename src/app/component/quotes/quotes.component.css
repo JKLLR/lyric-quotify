@@ -1,7 +1,7 @@
 .card {
     /*animates card elements*/
     margin: 3%;
-    width: 20rem;
+    width: 30rem;
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
     transition: all 0.3s ease-in-out;
