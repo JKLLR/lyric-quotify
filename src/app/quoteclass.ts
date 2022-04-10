@@ -4,7 +4,7 @@ export class Quoteclass {
     constructor(
         public Quote: string, 
         public author: string,
-        public submitter: string,
+        public iSubmit: string,
         
         public upVote:number,
         public downVote:number,
