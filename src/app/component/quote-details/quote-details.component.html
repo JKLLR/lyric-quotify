@@ -1,11 +1,12 @@
 <div class='container-fluid quoteHi'>
     <ul>
+        <hr>
         <li>Submitted by:  {{quote.iSubmit}}</li>
-        <li><button class= "btn" (click)='upTheVote(true)'><img src="../assets/thumb_u.svg" alt=""></button> UpVote : {{quote.upVote}}
-            <hr>
-            <button class='btn' (click)='downTheVote(true)'><img src="../assets/thumb_d.svg" alt=""></button> DownVote : {{quote.downVote}}</li>
-        <li> Posted {{quote.submitDate | date|  passedDays}} days ago. </li> 
+        <li> Posted on {{quote.submitDate | date: 'shortDate'}}      ~ {{quote.submitDate | date|  passedDays}} days ago. </li>
+        <li><button class= "btn" (click)='upTheVote(true)'><img src="../assets/thumb_u.svg" alt=""></button> UpVote : {{quote.upVote}} <br>
+        <button class='btn' (click)='downTheVote(true)'><img src="../assets/thumb_d.svg" alt=""></button> DownVote : {{quote.downVote}}</li>
+        
 
-        <button  class="btn" (click)='deleteQuote(true)' ><img src="./assets/delete.svg" alt=""></button>
+        <button  class="btn" (click)='deleteQuote(true)' ><img src="./assets/delete.svg" alt=""> Delete</button>
     </ul>
 </div>
