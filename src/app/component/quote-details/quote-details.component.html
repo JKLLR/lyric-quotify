@@ -1,9 +1,9 @@
 <div class='container-fluid quoteHi'>
     <ul>
         <li>Submitted by:  {{quote.iSubmit}}</li>
-        <li><button class= "btn btn-success" (click)='upTheVote(true)'></button> UpVote : {{quote.upVote}}
+        <li><button class= "btn" (click)='upTheVote(true)'><img src="../assets/thumb_u.svg" alt=""></button> UpVote : {{quote.upVote}}
             <hr>
-            <button class='btn btn-danger' (click)='downTheVote(true)'></button> DownVote : {{quote.downVote}}</li>
+            <button class='btn' (click)='downTheVote(true)'><img src="../assets/thumb_d.svg" alt=""></button> DownVote : {{quote.downVote}}</li>
         <li> Posted {{quote.submitDate}} days ago. </li> 
 
         <button  class="btn btn-danger" (click)='deleteQuote(true)' >Delete quote</button>
