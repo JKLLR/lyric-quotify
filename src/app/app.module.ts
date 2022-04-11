@@ -11,7 +11,6 @@ import { FormComponent } from './component/form/form.component';
 import { HighlightsDirective } from './directives/highlights.directive';
 import { QuoteDetailsComponent } from './component/quote-details/quote-details.component';
 import { daysPassedPipe } from './pipes.pipe';
-
 @NgModule({
   declarations: [
     AppComponent,
