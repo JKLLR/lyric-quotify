@@ -11,6 +11,7 @@ import { QuotesComponent } from './component/quotes/quotes.component';
 import { FormComponent } from './component/form/form.component';
 import { HighlightsDirective } from './directives/highlights.directive';
 import { QuoteDetailsComponent } from './component/quote-details/quote-details.component';
+import { PipesPipe } from './pipes.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QuoteDetailsComponent } from './component/quote-details/quote-details.c
     QuotesComponent,
     FormComponent,
     HighlightsDirective,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    PipesPipe
   ],
   imports: [
     BrowserModule,
