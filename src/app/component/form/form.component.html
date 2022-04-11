@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container-fluid mb-5">
     <form (ngSubmit)="submitQuote() ;quoteForm.resetForm({})"
     #quoteForm="ngForm">
-        <h2>Share your quote with the world</h2>
+        <h2>Try it out. Share your favourite lyric quote with us. </h2>
 
         <div class= "form-group col-md-6" >
             <label for="aQuote">Enter Quote:</label>
@@ -18,7 +18,7 @@
             <label for="author">Author/Musician</label>
             <textarea class='form-control' placeholder="Author of the Quote..." style="width: 60%;" type="text" id="author"  [(ngModel)]='newQuote.author' name='author' #author='ngModel' required></textarea>
         </div>
-        <button class="btn btn-success" type="submit">Add Quote</button>
+        <button class="btn btn-warning" type="submit">Add Quote</button>
         </div>
     </form>
 
