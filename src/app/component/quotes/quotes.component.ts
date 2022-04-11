@@ -60,6 +60,10 @@ export class QuotesComponent implements OnInit {
     }
   }
 
+  addNewQuote(newQuote:Quoteclass){
+    this.quotes.push(newQuote);
+   }
+
   
 
   constructor() { }
