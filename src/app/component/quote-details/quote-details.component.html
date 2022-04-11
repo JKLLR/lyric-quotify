@@ -1,1 +1,11 @@
-<p>quote-details works!</p>
+<div class='container-fluid quoteHi'>
+    <ul>
+        <li>Submitted by:  {{quote.iSubmit}}</li>
+        <li><button class= "btn btn-success" (click)='upTheVote(true)'>⬆️</button> UpVote : {{quote.upVote}}
+            <hr>
+            <button class='btn btn-danger' (click)='downTheVote(true)'>⬇️</button> DownVote : {{quote.downVote}}</li>
+        <li> Posted {{quote.submitDate}} days ago. </li> 
+
+        <button  class="btn btn-danger" (click)='deleteQuote(true)' >Delete quote</button>
+    </ul>
+</div>
