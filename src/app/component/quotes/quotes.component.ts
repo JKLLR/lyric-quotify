@@ -33,15 +33,33 @@ export class QuotesComponent implements OnInit {
     }
   }
 
-  // addUpVote(upThisVote:boolean, index:number) {
-  //   if(upThisVote){
-  //   this.quotes[index].upVote++
-  //   }
-  // } addUpVote(upThisVote:boolean, index:number) {
-  //   if(upThisVote){
-  //   this.quotes[index].upVote++
-  //   }
-  // }
+  addUpVote(upThisVote:boolean, index:number) {
+    if(upThisVote){
+    this.quotes[index].upVote++
+    }
+  } 
+  addDownVote(downThisVote:boolean, index:number) {
+    if(downThisVote){
+    this.quotes[index].downVote--
+  
+    }
+  }
+
+  highestUpVote() {
+    let highArray=[];
+  
+    for(let i = 0; i<this.quotes.length; i++) {
+       highArray.push(this.quotes[i].upVote);
+    }
+    let highestVote = Math.max(...highArray);
+    if(highestVote===0){
+      return 1
+    }
+    else{
+    return highestVote;
+    }
+  }
+
   
 
   constructor() { }
