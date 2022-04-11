@@ -2,8 +2,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'passedDays'
+
 })
-export class passedDays implements PipeTransform {
+export class daysPassedPipe implements PipeTransform {
 
   transform(value:any) :number{
 
